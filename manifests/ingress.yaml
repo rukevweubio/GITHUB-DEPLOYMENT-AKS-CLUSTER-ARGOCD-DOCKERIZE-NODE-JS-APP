@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: car-racing-ingress
-  namespace: argocd
+  namespace: dev
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
