@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: car-racing-app
-  namespace: dev
+  namespace: argocd
 spec:
   replicas: 2
   selector:
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: car-racing-app
-          image: kmlcontainerregistry.azurecr.io/car-racing-app:latest
+          image: rukevweubio/car-racing-app:latest
           ports:
             - containerPort: 80
