@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: car-racing-app
+  namespace: dev
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: car-racing-app
+  template:
+    metadata:
+      labels:
+        app: car-racing-app
+    spec:
+      containers:
+        - name: car-racing-app
+          image: kmlcontainerregistry.azurecr.io/car-racing-app:latest
+          ports:
+            - containerPort: 80
