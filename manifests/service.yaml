@@ -4,10 +4,11 @@ metadata:
   name: car-racing-service
   namespace: argocd
 spec:
+  type: NodePort
   selector:
     app: car-racing-app
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 80
-  type: ClusterIP
+      targetPort: 3000
+      nodePort: 30080  # Must be between 30000–32767
