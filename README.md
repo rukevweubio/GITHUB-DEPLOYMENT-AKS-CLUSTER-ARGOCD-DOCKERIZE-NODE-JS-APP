@@ -1,5 +1,7 @@
 # Deploy Node.js App to AKS with ArgoCD
 This project demonstrates how to build a simple Node.js application, containerize it using Docker, push the image to Azure Container Registry (ACR), and deploy it to an Azure Kubernetes Service (AKS) cluster using ArgoCD for continuous deployment. ArgoCD manages the Kubernetes manifests stored in a Git repository, ensuring automated updates to the AKS cluster when changes are pushed. This README provides step-by-step instructions to set up, build, and deploy the project.
+## project data diagram 
+![data diagram](https://github.com/rukevweubio/GITHUB-DEPLOYMENT-AKS-CLUSTER-ARGOCD-DOCKERIZE-NODE-JS-APP/blob/main/PICTURE/argocd%20.jpg)
 
 ## Project Overview
 - Prerequisites
