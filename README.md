@@ -68,6 +68,7 @@ argocd app create nodejs-app \
   --dest-namespace default \
   --sync-policy automated
 ```
+![argocd deployment](https://github.com/rukevweubio/GITHUB-DEPLOYMENT-AKS-CLUSTER-ARGOCD-DOCKERIZE-NODE-JS-APP/blob/main/PICTURE/Screenshot%20(1114).png)
 ## Expose ArgoCD:
 ```
 kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
@@ -106,6 +107,13 @@ spec:
       targetPort: 3000
   type: LoadBalancer
 ```
+## argocd  deployment
+![argocd deployment](https://github.com/rukevweubio/GITHUB-DEPLOYMENT-AKS-CLUSTER-ARGOCD-DOCKERIZE-NODE-JS-APP/blob/main/PICTURE/Screenshot%20(1113).png)
+
+![argocd deployment](https://github.com/rukevweubio/GITHUB-DEPLOYMENT-AKS-CLUSTER-ARGOCD-DOCKERIZE-NODE-JS-APP/blob/main/PICTURE/Screenshot%20(1112).png)
+
+
+
 
 
 
