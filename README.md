@@ -52,6 +52,7 @@ docker tag my-node-app:latest myAcrRegistry.azurecr.io/my-node-app:latest
 docker push myAcrRegistry.azurecr.io/my-node-app:latest
 
 ```
+![docker hub image](https://github.com/rukevweubio/GITHUB-DEPLOYMENT-AKS-CLUSTER-ARGOCD-DOCKERIZE-NODE-JS-APP/blob/main/PICTURE/Screenshot%20(1106).png)
 ## Set Up AKS
 ```
 az aks create --resource-group myResourceGroup --name myAKSCluster --node-count 2
@@ -68,6 +69,7 @@ argocd app create nodejs-app \
   --dest-namespace default \
   --sync-policy automated
 ```
+![aks ](https://github.com/rukevweubio/GITHUB-DEPLOYMENT-AKS-CLUSTER-ARGOCD-DOCKERIZE-NODE-JS-APP/blob/main/PICTURE/Screenshot%20(1104).png)
 ![argocd deployment](https://github.com/rukevweubio/GITHUB-DEPLOYMENT-AKS-CLUSTER-ARGOCD-DOCKERIZE-NODE-JS-APP/blob/main/PICTURE/Screenshot%20(1114).png)
 ## Expose ArgoCD:
 ```
