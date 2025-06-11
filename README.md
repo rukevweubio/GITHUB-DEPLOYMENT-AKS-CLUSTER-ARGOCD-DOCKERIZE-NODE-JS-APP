@@ -74,7 +74,9 @@ argocd app create nodejs-app \
 ## Expose ArgoCD:
 ```
 kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
+
 ```
+![argocd deployment](https://github.com/rukevweubio/GITHUB-DEPLOYMENT-AKS-CLUSTER-ARGOCD-DOCKERIZE-NODE-JS-APP/blob/main/PICTURE/Screenshot%20(1110).png)
 ## Deploy with ArgoCD
 ```
 apiVersion: apps/v1
